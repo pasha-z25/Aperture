@@ -1,0 +1,230 @@
+@import url('./global.css');
+
+/*------ATOMIC---------------------------------------------------------------------------------*/
+.hidden {
+  display: none;
+}
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.text-center {
+  text-align: center;
+}
+.color-white {
+  color: #fff;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.spacing2 {
+  letter-spacing: 2px;
+}
+/*------COMPONENTS-----------------------------------------------------------------------------*/
+.container {
+  width: 100%;
+  max-width: calc(1168px + 2rem);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0.4px;
+  border-radius: 14px;
+  padding: 9px 20px 13px 20px;
+}
+.btn-default {
+  color: #000000;
+  background-color: #ffffff;
+  text-align: center;
+}
+.btn-animate {
+}
+/*------HEADER---------------------------------------------------------------------------------*/
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.header .logo {
+  position: relative;
+  z-index: 3;
+}
+.header .wrapper {
+  gap: 30px;
+}
+.header .wrapper > .btn {
+  display: none;
+}
+.header .navigation {
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 30px;
+  flex-grow: 1;
+  position: fixed;
+  z-index: 2;
+  inset: 0;
+  padding: 98px 1rem 2rem 1rem;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+.header .navigation.active {
+  display: flex;
+}
+.header .navigation .btn {
+  margin-top: auto;
+}
+.burger {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  z-index: 3;
+}
+.burger span {
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 5px;
+  transition: all 0.2s linear;
+  opacity: 1;
+}
+.burger span:first-child {
+  top: 9px;
+}
+.burger span:nth-child(2),
+.burger span:nth-child(3) {
+  top: 24px;
+}
+.burger span:last-child {
+  top: 41px;
+}
+.burger.open span:first-child {
+  top: -10px;
+  opacity: 0;
+}
+.burger.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+.burger.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+.burger.open span:last-child {
+  top: 60px;
+  opacity: 0;
+}
+
+/*------BANNER---------------------------------------------------------------------------------*/
+.main-banner {
+  min-height: 716px;
+  background: url('../images/main_banner_params.jpg') no-repeat center/cover;
+  align-items: flex-end;
+  padding-bottom: 70px;
+}
+.main-title {
+  font-size: 54px;
+  padding-bottom: 1rem;
+}
+.main-banner .description {
+  max-width: 580px;
+}
+/*------BANNER---------------------------------------------------------------------------------*/
+/*------FOOTER---------------------------------------------------------------------------------*/
+.footer .up {
+  padding-top: 100px;
+  padding-bottom: 36px;
+}
+.footer .center {
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+.footer .down {
+  padding-top: 56px;
+  padding-bottom: 100px;
+}
+.footer .link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.footer .column {
+  flex-grow: 1;
+}
+.footer .column:first-child {
+  max-width: initial;
+}
+.footer .copy {
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+.footer .social {
+  gap: 20px;
+}
+.social-link:hover svg * {
+  fill: #fff;
+}
+.footer .description {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.footer .wrap {
+  flex-grow: 1;
+}
+.footer-form {
+  width: 100%;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+.footer-form label {
+  width: 100%;
+}
+.footer-form .email {
+  border: none;
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 18px;
+}
+.footer-form .email:focus {
+  outline: none;
+  border: none;
+}
+.footer-form .button {
+  position: absolute;
+  right: 0.2rem;
+  top: 0.6rem;
+  background: #000000;
+  color: #000000;
+  border-radius: 11px;
+  transition: all 0.2s linear;
+  font-size: 16px;
+  padding: 5px 11px;
+}
+.footer-form:hover .button {
+  color: #fff;
+}
