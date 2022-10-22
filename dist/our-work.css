@@ -1,0 +1,5 @@
+@import url(./_variables.scss);
+.our-work .wrapper {
+  display: grid;
+  gap: 1rem;
+}/*# sourceMappingURL=our-work.css.map */
